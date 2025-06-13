@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/aboutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About This App"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="#1976D2"
+            android:elevation="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="24dp"
+            android:padding="24dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/myphoto"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Profile Photo"
+                android:background="#EEEEEE"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="Name: Nurfarisha Binti Mohd Kamal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Student ID: 2023103163"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Course: ICT602 - Mobile Technology and Development"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- GitHub Button -->
+            <Button
+                android:id="@+id/buttonGitHub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View on GitHub"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E91E63"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:text="© 2025 Nurfarisha. All rights reserved."
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Electricity Bill Estimator</string>
+
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="month_format">Month: %1$s</string>
+    <string name="units_format">Units Used: %1$s</string>
+    <string name="total_format">Total Charges: RM %1$s</string>
+    <string name="rebate_format">Rebate: %1$s%%</string>
+    <string name="final_format">Final Cost: RM %1$s</string>
+
+    <string name="enter_all_fields">Please enter all fields.</string>
+    <string name="invalid_rebate">Rebate must be between 0% and 5%.</string>
+    <string name="saved_success">Saved to database</string>
+    <string name="saved_fail">Failed to save</string>
+</resources>

@@ -9,20 +9,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/aboutHeader"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/aboutToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="About This App"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="#FFFFFF"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
             android:background="#1976D2"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:elevation="4dp"
-            android:layout_marginBottom="8dp" />
+            android:title="About Developer"
+            android:titleTextColor="#FFFFFF" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,13 +35,13 @@
             <ImageView
                 android:id="@+id/imageProfile"
                 android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/myphoto"
-                android:scaleType="centerCrop"
+                android:layout_height="159dp"
                 android:layout_marginBottom="20dp"
-                android:contentDescription="Profile Photo"
                 android:background="#EEEEEE"
-                android:padding="4dp" />
+                android:contentDescription="Profile Photo"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/myphoto" />
 
             <TextView
                 android:text="Name: Nurfarisha Binti Mohd Kamal"

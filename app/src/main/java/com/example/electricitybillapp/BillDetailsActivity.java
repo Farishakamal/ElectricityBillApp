@@ -6,6 +6,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar; // ✅ Tambah ini
 
 public class BillDetailsActivity extends AppCompatActivity {
 
@@ -17,6 +18,13 @@ public class BillDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bill_details);
 
+        // ✅ Setup Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbarBill);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(v -> finish());
+
+        // Komponen UI
         textViewMonth = findViewById(R.id.textMonth);
         textViewUnits = findViewById(R.id.textUnits);
         textViewRebate = findViewById(R.id.textRebate);
@@ -57,8 +65,6 @@ public class BillDetailsActivity extends AppCompatActivity {
 
         if (!found) {
             Toast.makeText(this, "Record not found", Toast.LENGTH_SHORT).show();
-
-            // fallback UI
             textViewMonth.setText("No record found.");
             textViewUnits.setText("");
             textViewRebate.setText("");

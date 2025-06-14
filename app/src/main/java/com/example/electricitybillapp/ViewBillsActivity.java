@@ -52,7 +52,7 @@ public class ViewBillsActivity extends AppCompatActivity {
                     .setTitle("Confirm Deletion")
                     .setMessage("Are you sure you want to delete all saved bills?")
                     .setPositiveButton("Yes", (dialog, which) -> {
-                        dbHelper.deleteAll();      // 🔥 Delete all from DB
+                        dbHelper.deleteAll();      // Delete all from DB
                         billList.clear();          // Kosongkan list data
                         recordIDs.clear();         // Kosongkan ID list
                         adapter.notifyDataSetChanged(); // Refresh UI

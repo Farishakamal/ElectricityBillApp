@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         buttonAbout = findViewById(R.id.buttonAbout);
         textViewResult = findViewById(R.id.textViewResult);
 
-        dbHelper = new DatabaseHelper(this); // Inisialisasi database
+        dbHelper = new DatabaseHelper(this);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.months_array, android.R.layout.simple_spinner_item);

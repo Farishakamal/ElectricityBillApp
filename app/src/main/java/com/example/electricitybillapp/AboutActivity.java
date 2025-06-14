@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar; // 🔹 import untuk toolbar
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -14,15 +13,6 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-
-
-        Toolbar toolbar = findViewById(R.id.aboutToolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // ← Show back arrow
-        getSupportActionBar().setTitle("About This App");
-
-
-        toolbar.setNavigationOnClickListener(v -> finish());
 
 
         Button buttonGitHub = findViewById(R.id.buttonGitHub);

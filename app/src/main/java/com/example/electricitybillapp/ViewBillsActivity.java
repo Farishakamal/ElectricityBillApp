@@ -10,7 +10,6 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,18 +28,12 @@ public class ViewBillsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_bills);
 
-
-        Toolbar toolbar = findViewById(R.id.toolbarViewBills);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(v -> finish());
-
-
         listViewBills = findViewById(R.id.listViewBills);
         buttonClearAll = findViewById(R.id.buttonClearAll);
         dbHelper = new DatabaseHelper(this);
 
         loadBills();
+
 
         listViewBills.setOnItemClickListener((parent, view, position, id) -> {
             int selectedID = recordIDs.get(position);
@@ -49,7 +42,7 @@ public class ViewBillsActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
+        // Butang Clear All
         buttonClearAll.setOnClickListener(v -> {
             if (billList.isEmpty()) {
                 Toast.makeText(this, "No data to delete.", Toast.LENGTH_SHORT).show();
@@ -60,10 +53,10 @@ public class ViewBillsActivity extends AppCompatActivity {
                     .setTitle("Confirm Deletion")
                     .setMessage("Are you sure you want to delete all saved bills?")
                     .setPositiveButton("Yes", (dialog, which) -> {
-                        dbHelper.deleteAll();
-                        billList.clear();
-                        recordIDs.clear();
-                        adapter.notifyDataSetChanged();
+                        dbHelper.deleteAll();      // 🔥 Delete all from DB
+                        billList.clear();          // Kosongkan list data
+                        recordIDs.clear();         // Kosongkan ID list
+                        adapter.notifyDataSetChanged(); // Refresh UI
                         Toast.makeText(this, "All records deleted", Toast.LENGTH_SHORT).show();
                     })
                     .setNegativeButton("Cancel", null)

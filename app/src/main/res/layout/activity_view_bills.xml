@@ -6,16 +6,20 @@
     android:background="#FAFAFA"
     android:orientation="vertical">
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarViewBills"
+    <TextView
+        android:id="@+id/viewBillsHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Saved Bills"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
         android:background="#1976D2"
-        android:title="Saved Bills"
-        android:titleTextColor="#FFFFFF"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:elevation="4dp" />
+        android:elevation="4dp"
+        android:layout_marginBottom="8dp" />
 
 
     <LinearLayout
@@ -37,6 +41,7 @@
             android:dividerHeight="1dp"
             android:listSelector="@android:color/darker_gray"
             android:padding="8dp" />
+
 
         <Button
             android:id="@+id/buttonClearAll"

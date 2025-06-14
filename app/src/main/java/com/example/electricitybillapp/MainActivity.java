@@ -75,13 +75,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Butang View: Buka ViewBillsActivity
+        // ButtonView: Buka ViewBillsActivity
         buttonViewList.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ViewBillsActivity.class);
             startActivity(intent);
         });
 
-        // Butang About: Buka AboutActivity
+        // Button About: Buka AboutActivity
         buttonAbout.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(intent);

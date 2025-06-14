@@ -14,7 +14,6 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-
         Button buttonGitHub = findViewById(R.id.buttonGitHub);
         buttonGitHub.setOnClickListener(v -> {
             String url = "https://github.com/Farishakamal/ElectricityBillApp";

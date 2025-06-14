@@ -34,7 +34,6 @@ public class ViewBillsActivity extends AppCompatActivity {
 
         loadBills();
 
-
         listViewBills.setOnItemClickListener((parent, view, position, id) -> {
             int selectedID = recordIDs.get(position);
             Intent intent = new Intent(ViewBillsActivity.this, BillDetailsActivity.class);

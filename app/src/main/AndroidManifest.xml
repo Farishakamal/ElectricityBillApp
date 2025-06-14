@@ -24,9 +24,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ViewBillsActivity" />
-        <activity android:name=".BillDetailsActivity" />
-        <activity android:name=".AboutActivity" />
+        <activity
+            android:name=".ViewBillsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BillDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="true" />
 
     </application>
 

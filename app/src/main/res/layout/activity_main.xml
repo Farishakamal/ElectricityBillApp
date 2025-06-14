@@ -116,7 +116,7 @@
             android:id="@+id/buttonAbout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="About"
+            android:text="About Developer"
             android:textColor="#FFFFFF"
             android:backgroundTint="#1976D2"
             android:layout_marginBottom="8dp" />

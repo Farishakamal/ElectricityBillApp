@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Kaitan komponen UI
         spinnerMonth = findViewById(R.id.spinnerMonth);
         editTextUnits = findViewById(R.id.editTextUnits);
         editTextRebate = findViewById(R.id.editTextRebate);
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
         dbHelper = new DatabaseHelper(this); // Inisialisasi database
 
-        // Spinner bulan
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.months_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

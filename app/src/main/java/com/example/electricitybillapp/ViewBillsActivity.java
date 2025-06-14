@@ -42,7 +42,7 @@ public class ViewBillsActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Butang Clear All
+        // Button Clear All
         buttonClearAll.setOnClickListener(v -> {
             if (billList.isEmpty()) {
                 Toast.makeText(this, "No data to delete.", Toast.LENGTH_SHORT).show();
